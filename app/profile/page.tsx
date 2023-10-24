@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { UserAuth } from "../context/AuthContext";
 
-const page = () => {
+const Profile = () => {
   const { user } = UserAuth();
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -18,12 +18,12 @@ const page = () => {
       {loading ? (
         <p>Loading...</p>
       ) : user ? (
-        <p>Welcome, {user.displayName} you are logged in to profile.</p>
+        <p>🥳 Welcome, {user.displayName} you are logged in to profile.</p>
       ) : (
-        <p>You must be logged in for profile page.</p>
+        <p>🚧 You must be logged in for profile page.</p>
       )}
     </div>
   );
 };
 
-export default page;
+export default Profile;
