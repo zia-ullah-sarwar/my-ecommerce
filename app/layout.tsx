@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/app/components/Navbar";
 import { AuthContextProvider } from "@/app/context/AuthContext";
 import Footer from "./components/Footer";
+import ProductCarousel from "@/app/components/ProductCarousel";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,9 +22,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <AuthContextProvider>
           <Navbar />
+          {/* <ProductCarousel /> */}
           <div className="container">{children}</div>
         </AuthContextProvider>
-        {/* <Footer />   */}
+        <Footer />
       </body>
     </html>
   );

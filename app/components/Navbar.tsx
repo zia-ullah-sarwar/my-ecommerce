@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="flex items-center gap-2">
-            <p className="bg-green-700 px-2 rounded-[13px]">
+            <p className="bg-green-500 text-gray-700 px-2 rounded-[13px]">
               {displayNameFirstWord}
             </p>
             <p

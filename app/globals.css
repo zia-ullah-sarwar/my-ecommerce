@@ -26,5 +26,5 @@ body {
     rgb(var(--background-start-rgb));
 }
 .container {
-  padding: 75px 150px;
+  padding: 50px;
 }
